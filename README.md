@@ -74,7 +74,7 @@ docker-compose run --rm php yii migrate
 docker-compose run --rm php tests/bin/yii migrate
 ```
 
-4. The most important step, **nothing will work without it**:
+4. Run this script to fix folders ownership:
 
 ```
 docker-compose run --rm php docker-fix-permissions.sh
